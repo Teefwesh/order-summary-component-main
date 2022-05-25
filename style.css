@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 7px 20px rgba(114, 128, 167, 0.259);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+aside {
+  padding: 40px;
+}
+
+.header-img {
+  width: 400px;
+}
+
+.heading-primary {
+  margin-bottom: 15px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.header-description {
+  margin-bottom: 15px;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.plan-box {
+  margin-right: 50px;
+  line-height: 1.5;
+}
+
+.heading-secondary {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.change {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.change:hover {
+  color: hsla(245, 75%, 52%, 0.787);
+}
+
+.btn-payment {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 10px 20px rgba(28, 45, 200, 0.4);
+  padding: 15px 0;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.btn-payment:hover {
+  background-color: hsla(245, 75%, 52%, 0.787);
+}
+
+.btn-cancel {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 350px;
+  }
+
+  aside {
+    padding: 20px;
+  }
+
+  .header-description {
+    padding: 0 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .plan-box {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
